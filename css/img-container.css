@@ -1,0 +1,58 @@
+/*---------------------- IMG-CONTAINER ----------------------*/
+
+/* FONTOS!!!
+-------------------------------------------------------------
+
+A "box" classt el kell helyezni a html-ben a köv classok után:
+
+img_25
+img_33
+img_50
+img_75
+img_100
+img-title
+
+-------------------------------------------------------------
+*/
+.image-in-content img{z-index: 10;}
+.img_left img,
+.img_center img,
+.img_right img{width: 100%;}
+
+/* CONTAINER ALLIGN
+--------------------------------------------------------*/
+
+.img_left{float: left; margin: 2%;}
+.img_right{float: right; margin: 2%;}
+.img_center{display: block; margin: 2% auto 2% auto !important;}
+
+.img_border{border: 1px solid #ddd; padding: 1%; margin: 2%;}
+.img_caption{text-align: center; font-size: 0.875em; margin-top: 3px;}
+.img-title{margin-top: 0.5em; font-size: 0.85em; text-align: center; padding: 0 0.25em;}
+
+/*---------------------- PC ----------------------*/
+
+@media only screen and (min-width: 520px){
+
+.img_25{width: 21%;}
+.img_33{width: 29.3333%;}
+.img_50{width: 46%;}
+.img_75{width: 71%;}
+.img_100{width: 100%;}
+
+.img_100.img_left{margin: 2% 0;}
+.img_100.img_right{margin: 2% 0;}
+
+}
+
+/* Admin img preview (csak a PC-s megjelenést mutatja)
+--------------------------------------------------------*/
+
+.mce-content-body .img_25{width: 21%;}
+.mce-content-body .img_33{width: 29.3333%;}
+.mce-content-body .img_50{width: 46%;}
+.mce-content-body .img_75{width: 71%;}
+.mce-content-body .img_100{width: 100%;}
+
+.mce-content-body .img_100.img_left,
+.mce-content-body .img_100.img_right{margin: 2% 0;}

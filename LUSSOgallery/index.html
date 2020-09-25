@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Lusso Ajtó Galéria</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Beltéri ajtók - Galéria</title>
+    <meta name="verify-v1" content="UA-33775733-1" />
+    <meta name="description" content="Beltéri ajtó, ajtók mdf fóliás gyártása modern kivitelben. " />
+    <meta name="keywords" content="deep,ajto,ajtók,beltéri,belteri,mdf,fóliás,modern" />
+    <meta name="robots" content="index, follow" />
+    <meta name="content-language" content="hu, hun, hungarian">
+    <link rel="shortcut icon" href="../images/favicons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="../images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="../images/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+
+    <link href="stylelusso.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ruluko&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sintony&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.js">
+
+
+        //HOVERSTAY
+
+        $("#C1 a").click(function() {
+            $("#C1 a").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        $("#C2 a").click(function() {
+            $("#C2 a").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        $("#C3 a").click(function() {
+            $("#C3 a").removeClass("active");
+            $(this).addClass("active");
+        });
+
+
+        //KERESŐ
+
+        $(document).ready(function() {
+            $('#b').click(function Mut() {
+
+                eval("foil" + $('#ajtoszam').val() + "()");
+
+                eval("mint" + $('#mintaszam').val() + "()");
+
+            });
+
+        });
+
+        $(function() {
+            $(":button").click(function() {
+                $($(this).val() + "()").executeFunctionByName();
+
+            });
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+    <script type="text/javascript" src="engine.js"></script>
+
+    <script language="JavaScript" type="text/javascript">
+        function SUMM() {
+            var S = document.getElementById('mintaszam').value +
+                '/' +
+                document.getElementById('szal').value +
+                '/' +
+                document.getElementById('oszt').value +
+                '/' +
+                document.getElementById('ajtoszam').value;
+            
+            document.getElementById('sum').innerHTML = S;
+        }
+
+
+        //vasalat
+        function vas() {
+            document.getElementById('vashatter').innerHTML = "<img src='vasalat/vas.png' />";
+        }
+
+        //tokalap
+        //function alap() 	{document.getElementById('alap').innerHTML="<img src='mintak/tok.png' />";}
+        function tok2() {
+            document.getElementById('alap').innerHTML = "<img src='mintak/tok2.png' />";
+        }
+
+        function pant() {
+            document.getElementById('pant').innerHTML = "<img src='vasalat/pant2.png' />";
+        }
+
+
+    </script>
+
+
+
+</head>
+
+
+<body onLoad="foils33(); aL15_9_2(); vas();SHI();SUMM();checkEdits();">
+
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="images/doorstar-logo.svg" alt="Doorstar" />
+
+            </a>
+        </div>
+    </header>
+
+
+
+    <div id="container">
+        <div id="menucont">
+
+            <div id="menu">
+
+                <div class="content" id="box1">
+                    <div id="h1">
+                        <h1>&nbsp;&nbsp;MINTA</h1>
+
+                        <input type="button" id="forg" onclick="toggle();doIt();SUMM()" value="minta elforgatása" />
+                        <div id="mint">
+                            <input name="marasszam" type="text" value="L15" size="4" id="mintaszam" onkeydown="Javascript: if (event.keyCode==13) doIt();SUMM()" />
+                            /
+                            <input id="szal" name="szal" type="text" value="2" size="1" onkeydown="Javascript: if (event.keyCode==13) doIt();SUMM()" />
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="C1" name="mintak" class="scroll">
+                        <div class="slide">
+
+                            <a onclick="document.getElementById('mintaszam').value= 'L1';doIt();SHI();SUMM()"><img src="mintak_k/101.jpg" title="L1" /><br>L1</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L2';doIt();SHI();SUMM()"><img src="mintak_k/102.jpg" title="L2" /><br>L2</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L3';doIt();SHI();SUMM()"><img src="mintak_k/103.jpg" title="L3" /><br>L3</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L4';doIt();SHI();SUMM()"><img src="mintak_k/104.jpg" title="L4" /><br>L4</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L5';doIt();SHI();SUMM()"><img src="mintak_k/105.jpg" title="L5" /><br>L5</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L6';doIt();SHI();SUMM()"><img src="mintak_k/106.jpg" title="L6" /><br>L6</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L7';doIt();SHI();SUMM()"><img src="mintak_k/107.jpg" title="L7" /><br>L7</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L8';doIt();SHI();SUMM()"><img src="mintak_k/108.jpg" title="L8" /><br>L8</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L9';doIt();SHI();SUMM()"><img src="mintak_k/109.jpg" title="L9" /><br>L9</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L10';doIt();SHI();SUMM()"><img src="mintak_k/110.jpg" title="L0" /><br>L10</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L11';doIt();SHII();SUMM()"><img src="mintak_k/201.jpg" title="L11" /><br>L11</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L12';doIt();SHII();SUMM()"><img src="mintak_k/202.jpg" title="L12" /><br>L12</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L13';doIt();SHII();SUMM()"><img src="mintak_k/203.jpg" title="L13" /><br>L13</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L14';doIt();SHII();SUMM()"><img src="mintak_k/204.jpg" title="L14" /><br>L14</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L15';doIt();SHII();SUMM()"><img src="mintak_k/205.jpg" title="L15" /><br>L15</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L16';doIt();SHII();SUMM()"><img src="mintak_k/206.jpg" title="L16" /><br>L16</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L17';doIt();SHIII();SUMM()"><img src="mintak_k/301.jpg" title="L17" /><br>L17</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L18';doIt();SHIII();SUMM()"><img src="mintak_k/302.jpg" title="L18" /><br>L18</a>
+
+                            <a onclick="document.getElementById('mintaszam').value= 'L19';document.getElementById('szal').value= '1';doIt();SHIII();SUMM()">
+                                <img src="mintak_k/303.jpg" title="L19" /><br>L19</a>
+                            <a onclick="document.getElementById('mintaszam').value= 'L20';document.getElementById('szal').value= '1';doIt();SHIII();SUMM()">
+                                <img src="mintak_k/304.jpg" title="L20" /><br>L20</a>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="content" id="boxO">
+                    <div id="h2">
+                        <h2>&nbsp;&nbsp;FELOSZTÁS</h2>
+
+                        <input id="oszt" type="text" value="9" size="4" onkeydown="Javascript: if (event.keyCode==13) doIt();SUMM()" />
+
+
+                    </div>
+                    <div id="C2" class="scroll">
+                        <div class="slide">
+
+                            <a onclick="document.getElementById('oszt').value= '1';doIt();SUMM()"><img src="oszt/1.jpg" title="1" /><br>1</a>
+                            <a onclick="document.getElementById('oszt').value= '2';doIt();SUMM()"><img src="oszt/2.jpg" title="2" /><br>2</a>
+                            <a onclick="document.getElementById('oszt').value= '3';doIt();SUMM()"><img src="oszt/3.jpg" title="3" /><br>3</a>
+                            <a onclick="document.getElementById('oszt').value= '4';doIt();SUMM()"><img src="oszt/4.jpg" title="4" /><br>4</a>
+                            <a onclick="document.getElementById('oszt').value= '5';doIt();SUMM()"><img src="oszt/5.jpg" title="5" /><br>5</a>
+                            <a onclick="document.getElementById('oszt').value= '6';doIt();SUMM()"><img src="oszt/6.jpg" title="6" /><br>6</a>
+                            <a onclick="document.getElementById('oszt').value= '7';doIt();SUMM()"><img src="oszt/7.jpg" title="7" /><br>7</a>
+                            <a onclick="document.getElementById('oszt').value= '8';doIt();SUMM()"><img src="oszt/8.jpg" title="8" /><br>8</a>
+                            <a onclick="document.getElementById('oszt').value= '9';doIt();SUMM()"><img src="oszt/9.jpg" title="9" /><br>9</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="box2">
+                    <div id="h3">
+                        <h3>&nbsp;&nbsp;SZÍN </h3>
+                        <input name="foliaszam" type="text" value="r18" size="4" id="ajtoszam" onkeydown="Javascript: if (event.keyCode==13) doIt();SUMM()" />
+                    </div>
+
+
+                    <div id="C3" name="osztas" class="scroll">
+                        <div class="slide">
+
+                            <a onclick="document.getElementById('ajtoszam').value='s1';foils1();SUMM()"><img src="thumbs/s1.jpg" width="48" title="S1" height="48" /><br>S1</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s2';foils2();SUMM()"><img src="thumbs/s2.jpg" width="48" title="S2" height="48" /><br>S2</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s3';foils3();SUMM()"><img src="thumbs/s3.jpg" width="48" title="S3" height="48" /><br>S3</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s4';foils4();SUMM()"><img src="thumbs/s4.jpg" width="48" title="S4" height="48" /><br>S4</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s5';foils5();SUMM()"><img src="thumbs/s5.jpg" width="48" title="S5" height="48" /><br>S5</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s6';foils6();SUMM()"><img src="thumbs/s6.jpg" width="48" title="S6" height="48" /><br>S6</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s7';foils7();SUMM()"><img src="thumbs/s7.jpg" width="48" title="S7" height="48" /><br>S7</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s8';foils8();SUMM()"><img src="thumbs/s8.jpg" width="48" title="S8" height="48" /><br>S8</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s9';foils9();SUMM()"><img src="thumbs/s9.jpg" width="48" title="S9" height="48" /><br>S9</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s10';foils10();SUMM()"><img src="thumbs/s10.jpg" width="48" title="S10" height="48" /><br>S10</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s11';foils11();SUMM()"><img src="thumbs/s11.jpg" width="48" title="S11" height="48" /><br>S11</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s12';foils12();SUMM()"><img src="thumbs/s12.jpg" width="48" title="S12" height="48" /><br>S12</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s13';foils13();SUMM()"><img src="thumbs/s13.jpg" width="48" title="S13" height="48" /><br>S13</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s14';foils14();SUMM()"><img src="thumbs/s14.jpg" width="48" title="S14" height="48" /><br>S14</a>
+                            <a onclick="document.getElementById('ajtoszam').value='s15';foils15();SUMM()"><img src="thumbs/s15.jpg" width="48" title="S15" height="48" /><br>S15</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r1';foils16();SUMM()"><img src="thumbs/r1.jpg" width="48" title="R1" height="48" /><br>R1</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r2';foils17();SUMM()"><img src="thumbs/r2.jpg" width="48" title="R2" height="48" /><br>R2</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r3';foils18();SUMM()"><img src="thumbs/r3.jpg" width="48" title="R3" height="48" /><br>R3</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r4';foils19();;SUMM()"><img src="thumbs/r4.jpg" width="48" title="R4" height="48" /><br>R4</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r5';foils20();SUMM()"><img src="thumbs/r5.jpg" width="48" title="R5" height="48" /><br>R5</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r6';foils21();SUMM()"><img src="thumbs/r6.jpg" width="48" title="R6" height="48" /><br>R6</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r7';foils22();SUMM()"><img src="thumbs/r7.jpg" width="48" title="R7" height="48" /><br>R7</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r8';foils23();tSUMM()"><img src="thumbs/r8.jpg" width="48" title="R8" height="48" /><br>R8</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r9';foils24();SUMM()"><img src="thumbs/r9.jpg" width="48" title="R9" height="48" /><br>R9</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r10';foils25();SUMM()"><img src="thumbs/r10.jpg" width="48" title="R10" height="48" /><br>R10</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r11';foils26();SUMM()"><img src="thumbs/r11.jpg" width="48" title="R11" height="48" /><br>R11</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r12';foils27();SUMM()"><img src="thumbs/r12.jpg" width="48" title="R12" height="48" /><br>R12</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r13';foils28();SUMM()"><img src="thumbs/r13.jpg" width="48" title="R13" height="48" /><br>R13</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r14';foils29();SUMM()"><img src="thumbs/r14.jpg" width="48" title="R14" height="48" /><br>R14</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r15';foils30();SUMM()"><img src="thumbs/r15.jpg" width="48" title="R15" height="48" /><br>R15</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r16';foils31();SUMM()"><img src="thumbs/r16.jpg" width="48" title="R16" height="48" /><br>R16</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r17';foils32();SUMM()"><img src="thumbs/r17.jpg" width="48" title="R17" height="48" /><br>R17</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r18';foils33();SUMM()"><img src="thumbs/r18.jpg" width="48" title="R18" height="48" /><br>R18</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r19';foils34();SUMM()"><img src="thumbs/r19.jpg" width="48" title="R19" height="48" /><br>R19</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r20';foils35();SUMM()"><img src="thumbs/r20.jpg" width="48" title="R20" height="48" /><br>R20</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r21';foils36();SUMM()"><img src="thumbs/r21.jpg" width="48" title="R21" height="48" /><br>R21</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r22';foils37();SUMM()"><img src="thumbs/r22.jpg" width="48" title="R22" height="48" /><br>R22</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r23';foils38();SUMM()"><img src="thumbs/r23.jpg" width="48" title="R23" height="48" /><br>R23</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r24';foils39();SUMM()"><img src="thumbs/r24.jpg" width="48" title="R24" height="48" /><br>R24</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r25';foils40();SUMM()"><img src="thumbs/r25.jpg" width="48" title="R25" height="48" /><br>R25</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r26';foils41();SUMM()"><img src="thumbs/r26.jpg" width="48" title="R26" height="48" /><br>R26</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r27';foils42();SUMM()"><img src="thumbs/r27.jpg" width="48" title="R27" height="48" /><br>R27</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r28';foils43();SUMM()"><img src="thumbs/r28.jpg" width="48" title="R28" height="48" /><br>R28</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r29';foils44();SUMM()"><img src="thumbs/r29.jpg" width="48" title="R29" height="48" /><br>R29</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r30';foils45();SUMM()"><img src="thumbs/r30.jpg" width="48" title="R30" height="48" /><br>R30</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r31';foils46();SUMM()"><img src="thumbs/r31.jpg" width="48" title="R31" height="48" /><br>R31</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r32';foils47();SUMM()"><img src="thumbs/r32.jpg" width="48" title="R32" height="48" /><br>R32</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r33';foils48();SUMM()"><img src="thumbs/r33.jpg" width="48" title="R33" height="48" /><br>R33</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r34';foils49();SUMM()"><img src="thumbs/r34.jpg" width="48" title="R34" height="48" /><br>R34</a>
+<!--
+                            <a onclick="document.getElementById('ajtoszam').value='r35';foils50();SUMM()"><img src="thumbs/r35.jpg" width="48" title="R35" height="48" /><br>R35</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r36';foils51();SUMM()"><img src="thumbs/r36.jpg" width="48" title="R36" height="48" /><br>R36</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r37';foilbs52();SUMM()"><img src="thumbs/r37.jpg" width="48" title="R37" height="48" /><br>R37</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r38';foils53();SUMM()"><img src="thumbs/r38.jpg" width="48" title="R38" height="48" /><br>R38</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r39';foils54();SUMM()"><img src="thumbs/r39.jpg" width="48" title="R39" height="48" /><br>R39</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r40';foils55();SUMM()"><img src="thumbs/r40.jpg" width="48" title="R40" height="48" /><br>R40</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r41';foils56();SUMM()"><img src="thumbs/r41.jpg" width="48" title="R41" height="48" /><br>R41</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r42';foils57();SUMM()"><img src="thumbs/r42.jpg" width="48" title="R42" height="48" /><br>R42</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r43';foils58();SUMM()"><img src="thumbs/r43.jpg" width="48" title="R43" height="48" /><br>R43</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r44';foils59();SUMM()"><img src="thumbs/r44.jpg" width="48" title="R44" height="48" /><br>R44</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r45';foils60();SUMM()"><img src="thumbs/r45.jpg" width="48" title="R45" height="48" /><br>R45</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r46';foils61();SUMM()"><img src="thumbs/r46.jpg" width="48" title="R46" height="48" /><br>R46</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r47';foils62();SUMM()"><img src="thumbs/r47.jpg" width="48" title="R47" height="48" /><br>R47</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r48';foils63();SUMM()"><img src="thumbs/r48.jpg" width="48" title="R48" height="48" /><br>R48</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r49';foils64();SUMM()"><img src="thumbs/r49.jpg" width="48" title="R49" height="48" /><br>R49</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r50';foils65();SUMM()"><img src="thumbs/r50.jpg" width="48" title="R50" height="48" /><br>R50</a>
+                            <a onclick="document.getElementById('ajtoszam').value='r51';foils66();SUMM()"><img src="thumbs/r51.jpg" width="48" title="R51" height="48" /><br>R51</a>
+-->
+                            <a onclick="document.getElementById('ajtoszam').value='r52';foils67();SUMM()"><img src="thumbs/r52.jpg" width="48" title="R52" height="48" /><br>R52</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+
+                <div id="info">
+
+
+
+                    <div id="summ">A VÁLASZTOTT AJTÓ SZÁMA:
+                        <p id="sum"></p>
+                    </div>
+
+                    <input id="b" type="button" title="KERESS SZÁMKÓD SZERINT!" value="MUTASD!" onClick="saveEdits();doItByCode();" />
+
+                </div>
+
+
+            </div>
+ 
+
+        </div>
+
+
+
+
+        <div id="door">
+
+            <div id="folia" name="folia"></div>
+            <div id="tok" name="tok"></div>
+            <div id="minta" name="minta"></div>
+
+            <div id="vashatter" name="vashatter"></div>
+            <div id="pant" name="pant"></div>
+
+        </div>
+
+
+        <!-- Plugin initialization -->
+
+
+        <script type="text/javascript">
+            (function($) {
+                $(window).load(function() {
+                    $(".scroll").mCustomScrollbar({
+                        horizontalScroll: true,
+                        scrollButtons: {
+                            enable: true
+                        },
+                        theme: "light"
+                    });
+                });
+            })(jQuery);
+
+        </script>
+
+    </div><!-- container end tag -->
+
+
+    <script type="text/javascript" src="jquery.mCustomScrollbar.js"></script>
+
+
+
+</body>
+
+</html>

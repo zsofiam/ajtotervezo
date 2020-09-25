@@ -1,0 +1,45 @@
+/* >> individual CSS
+------------------------------------------------------------*/
+@import "../editor-style.css";
+
+.pswp *{position: static;} /* contra reset.css for photoswipe */
+.video_img {
+    background-size: cover;
+    background-position: center center;
+}
+.jumpTo{
+    cursor:pointer;
+}
+.thumbGallery__navigator {
+    -webkit-user-select: none;  /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.thumbGallery__navigatorWrapper__item {
+    cursor:pointer;
+}
+
+.form-true-message{padding: 16px 16px; color: white; background-color: #40d47e; border-radius: 5px; margin-bottom: 16px; text-align: center; margin: 2em auto; width: 300px; height: 50px; display: block;}
+.form-false-message{padding: 16px 16px; color: white; background-color: #f16363; border-radius: 5px; margin-bottom: 16px; text-align: center; margin: 2em auto; width: 300px; height: 50px; display: block;}
+
+
+/* >> TAB
+--------------------------------------------*/
+
+@media only screen and (min-width: 720px){
+
+}
+
+/* >> PC
+--------------------------------------------*/
+
+
+@media only screen and (min-width: 1024px){
+
+    .page__slider {
+        opacity: 0;
+    }
+
+}
